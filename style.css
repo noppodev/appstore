@@ -1,0 +1,34 @@
+:root { --bg:#f8fafc; --panel:#ffffff; --text:#0f172a; --muted:#475569; --brand:#0ea5e9; --border:#e2e8f0; }
+* { box-sizing: border-box; }
+html, body { height:100%; }
+body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; background:linear-gradient(180deg, #f8fafc, #f1f5f9); color:var(--text); }
+.topbar { position:sticky; top:0; z-index:10; display:flex; align-items:center; justify-content:space-between; padding:12px 16px; background:rgba(255,255,255,.75); backdrop-filter:saturate(140%) blur(10px); border-bottom:1px solid var(--border); }
+.brand { font-weight:700; letter-spacing:.02em; }
+.ghost { background:transparent; color:var(--text); border:1px solid var(--border); padding:8px 12px; border-radius:10px; cursor:pointer; }
+.container { max-width:1100px; margin:0 auto; padding:16px; }
+.notice { margin:8px 0 16px; }
+.searchbar { display:flex; gap:8px; margin:12px 0 18px; }
+.toolbar { display:flex; align-items:center; justify-content:flex-end; color:var(--muted); margin:0 0 8px; font-size:13px; }
+.card { transition: transform .08s ease, box-shadow .12s ease; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(15,23,42,.12); }
+.card.skeleton .shimmer { position:relative; color:transparent; }
+.card.skeleton .shimmer::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg, transparent, rgba(148,163,184,.25), transparent); animation: shimmer 1.2s infinite; }
+@keyframes shimmer { 0%{transform:translateX(-100%)} 100%{transform:translateX(100%)} }
+.searchbar input, .searchbar select { background:#ffffff; color:var(--text); border:1px solid var(--border); padding:10px 12px; border-radius:10px; width:100%; }
+.searchbar select { width:auto; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap:12px; }
+.card { display:grid; grid-template-columns:56px 1fr; gap:12px; align-items:flex-start; background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:12px; box-shadow: 0 6px 18px rgba(15,23,42,.08); }
+.card .icon { width:56px; height:56px; border-radius:12px; background:#f1f5f9; border:1px solid var(--border); object-fit:cover; }
+.card .meta { display:flex; flex-direction:column; gap:6px; }
+.card .title { font-size:16px; margin:0; }
+.card .desc { margin:0; color:var(--muted); font-size:13px; line-height:1.4; }
+.card .tags { display:flex; gap:6px; flex-wrap:wrap; }
+.card .tags span { font-size:12px; color:#0369a1; background:rgba(14,165,233,.12); border:1px solid rgba(14,165,233,.25); padding:2px 6px; border-radius:999px; }
+.card .meta2 { color:var(--muted); font-size:12px; display:flex; gap:10px; }
+.actions { grid-column: 1 / span 2; display:flex; gap:8px; margin-top:6px; }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:6px; padding:10px 12px; border-radius:10px; border:1px solid var(--border); color:var(--text); text-decoration:none; cursor:pointer; }
+.btn.primary { background: linear-gradient(180deg, #38bdf8, #0ea5e9); color:#ffffff; border:0; font-weight:700; }
+.btn.outline { background:transparent; }
+.footer { display:flex; justify-content:space-between; align-items:center; gap:10px; padding:16px; border-top:1px solid var(--border); color:var(--muted); background:#ffffff80; }
+
+

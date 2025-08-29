@@ -1,0 +1,64 @@
+[
+  {
+    "id": "vivaldi",
+    "name": "Vivaldi",
+    "description": "高機能ブラウザ。ジェスチャーや柔軟なUIが特徴。",
+    "version": "",
+    "updatedAt": "2025-08-29",
+    "tags": ["browser"],
+    "icon": "https://cdn.simpleicons.org/vivaldi",
+    "apkUrl": "apk/vivaldi.apk"
+  },
+  {
+    "id": "firefox",
+    "name": "Firefox",
+    "description": "プライバシー重視のブラウザ。拡張保護機能。",
+    "version": "",
+    "updatedAt": "2025-08-29",
+    "tags": ["browser"],
+    "icon": "https://cdn.simpleicons.org/firefoxbrowser",
+    "apkUrl": "apk/firefox.apk"
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube",
+    "description": "動画プラットフォーム。ログインと通知にGoogle Play開発者サービスが必要な場合があります。",
+    "version": "",
+    "updatedAt": "2025-08-29",
+    "tags": ["google", "video"],
+    "icon": "https://cdn.simpleicons.org/youtube",
+    "apkUrl": "apk/youtube.apk"
+  },
+  {
+    "id": "maps",
+    "name": "Google マップ",
+    "description": "地図・ナビ。端末によりARM/Bundle分割あり。",
+    "version": "",
+    "updatedAt": "2025-08-29",
+    "tags": ["google", "maps"],
+    "icon": "https://cdn.simpleicons.org/googlemaps",
+    "apkUrl": "apk/google-maps.apk"
+  },
+  {
+    "id": "Perplexity",
+    "name": "Perplexity",
+    "description": "AI検索",
+    "version": "",
+    "updatedAt": "2025-08-29",
+    "tags": ["browser"],
+    "icon": "https://cdn.simpleicons.org/perplexity",
+    "apkUrl": "apk/perplexity.apk"
+  },
+  {
+    "id": "drive",
+    "name": "Google ドライブ",
+    "description": "クラウドストレージアクセス。",
+    "version": "",
+    "updatedAt": "2025-08-29",
+    "tags": ["google", "cloud"],
+    "icon": "https://cdn.simpleicons.org/googledrive",
+    "apkUrl": "apk/google-drive.apk"
+  }
+]
+
+

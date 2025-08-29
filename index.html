@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>のっぽアプリストア</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="icon" href="/icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="APKを配布する軽量ストア (PWA対応)">
+  <script>
+    if (location.protocol === 'http:' && location.hostname !== 'localhost') {
+      location.replace(location.href.replace('http:', 'https:'));
+    }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">のっぽアプリストア</div>
+    <button id="installPwaBtn" class="ghost" hidden>インストール</button>
+  </header>
+
+  <main class="container">
+    <section class="notice" id="androidNotice">
+      <details>
+        <summary>APKのインストールが開始しない場合はこちら</summary>
+        <div>
+          ・Androidではブラウザからの自動インストールはできません。APKをダウンロード後、通知から開いてインストールしてください。<br>
+          ・初回は「提供元不明のアプリ」を許可する必要があります。設定 → セキュリティ → 不明なアプリのインストール からブラウザに許可を付与してください。<br>
+          ・ダウンロードが開始しない場合は別ブラウザ (Chrome/Edge) やWi‑Fiを切替えてお試しください。
+        </div>
+      </details>
+    </section>
+
+    <section class="searchbar">
+      <input id="searchInput" type="search" placeholder="アプリ名・説明で検索" autocomplete="off">
+      <select id="sortSelect" aria-label="並び替え">
+        <option value="latest">新しい順</option>
+        <option value="name">名前順</option>
+      </select>
+    </section>
+
+    <div class="toolbar">
+      <span id="countLabel">0件</span>
+    </div>
+
+    <section id="appsGrid" class="grid" aria-live="polite" aria-busy="true"></section>
+
+    <template id="skeletonTpl">
+      <article class="card skeleton">
+        <div class="icon"></div>
+        <div class="meta">
+          <h3 class="title shimmer">タイトル</h3>
+          <p class="desc shimmer">説明文が入ります</p>
+          <div class="tags"><span></span><span></span></div>
+          <div class="meta2"><span class="ver">v0.0.0</span><span class="updated">----/--/--</span></div>
+        </div>
+        <div class="actions"><a class="btn primary" aria-disabled="true">読み込み中…</a></div>
+      </article>
+    </template>
+
+    <template id="appCardTpl">
+      <article class="card">
+        <img class="icon" alt="">
+        <div class="meta">
+          <h3 class="title"></h3>
+          <p class="desc"></p>
+          <div class="tags"></div>
+          <div class="meta2">
+            <span class="ver"></span>
+            <span class="updated"></span>
+          </div>
+        </div>
+        <div class="actions">
+          <a class="btn primary dl" download>ダウンロード</a>
+        </div>
+      </article>
+    </template>
+  </main>
+
+  <footer class="footer">
+    <span>© のっぽアプリストア</span>
+    <a href="#" id="updateCacheBtn">オフラインデータ更新</a>
+  </footer>
+
+  <script src="store.js" defer></script>
+</body>
+</html>
+
+
