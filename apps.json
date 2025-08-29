@@ -7,7 +7,7 @@
     "updatedAt": "2025-08-29",
     "tags": ["browser"],
     "icon": "https://cdn.simpleicons.org/vivaldi",
-    "apkUrl": "apk/vivaldi.apk"
+    "apkUrl": "vivaldi.apk"
   },
   {
     "id": "firefox",
@@ -17,7 +17,7 @@
     "updatedAt": "2025-08-29",
     "tags": ["browser"],
     "icon": "https://cdn.simpleicons.org/firefoxbrowser",
-    "apkUrl": "apk/firefox.apk"
+    "apkUrl": "firefox.apk"
   },
   {
     "id": "youtube",
@@ -27,7 +27,7 @@
     "updatedAt": "2025-08-29",
     "tags": ["google", "video"],
     "icon": "https://cdn.simpleicons.org/youtube",
-    "apkUrl": "apk/youtube.apk"
+    "apkUrl": "youtube.apk"
   },
   {
     "id": "maps",
@@ -37,7 +37,7 @@
     "updatedAt": "2025-08-29",
     "tags": ["google", "maps"],
     "icon": "https://cdn.simpleicons.org/googlemaps",
-    "apkUrl": "apk/google-maps.apk"
+    "apkUrl": "google-maps.apk"
   },
   {
     "id": "Perplexity",
@@ -47,7 +47,7 @@
     "updatedAt": "2025-08-29",
     "tags": ["browser"],
     "icon": "https://cdn.simpleicons.org/perplexity",
-    "apkUrl": "apk/perplexity.apk"
+    "apkUrl": "perplexity.apk"
   },
   {
     "id": "drive",
@@ -57,8 +57,9 @@
     "updatedAt": "2025-08-29",
     "tags": ["google", "cloud"],
     "icon": "https://cdn.simpleicons.org/googledrive",
-    "apkUrl": "apk/google-drive.apk"
+    "apkUrl": "google-drive.apk"
   }
 ]
+
 
 
