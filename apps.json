@@ -27,7 +27,7 @@
     "updatedAt": "2025-08-29",
     "tags": ["google", "video"],
     "icon": "https://cdn.simpleicons.org/youtube",
-    "apkUrl": "youtube.apk"
+    "apkUrl": "youtube.zip"
   },
   {
     "id": "maps",
@@ -57,9 +57,10 @@
     "updatedAt": "2025-08-29",
     "tags": ["google", "cloud"],
     "icon": "https://cdn.simpleicons.org/googledrive",
-    "apkUrl": "google-drive.apk"
+    "apkUrl": "google-drive.zip"
   }
 ]
+
 
 
 
